@@ -1,0 +1,523 @@
+MERN 
+    NewMongo DB
+    Express BE 
+    React FE / Angular  / Vue js 
+    Node Server Env
+
+Node js 
+Sublime text, vscode, webide
+git 
+NewMongodb 
+
+
+since2008
+
+Internet/intranet 
+How web works
+
+    Client-server Architecture 
+    Client -    
+            - creates a request with the server 
+    Server - 
+            - responds to the request 
+            - html content
+            - endpoints / api 
+    
+
+    https://facebook.com/sandeshbhattarai
+
+
+    https://youtube.com/watch?v=videoId
+
+
+    http    => 80
+    https   => 443
+
+    protocol://domain:port/params?query
+
+        headers 
+
+    404 Not found
+
+            ://ipaddress
+
+            domainname.tld.countrydomain
+
+            sandeshbhattarai.com.np
+
+JS = Client Side Scripting language 
+
+
+GIT 
+    -> Version Controlling Tool
+
+PM 
+    -> Dev
+        a   => Nepal
+        b   => Australia    
+        c   => US
+
+    a => 3 days => Code, index.js  
+    b => 5 days => Code, index.js
+
+Git 
+    - git software
+
+// laptop git           // Server deploy
+
+// local            Repo (github, gitlab, bitbucket, self)
+
+// git commands in local machine 
+push    =>  repo 
+
+pull    <=  repo
+
+
+
+seed 
+    trunk 
+        branch 
+
+repo 
+    master 
+        branch 
+            branch 
+        branch
+
+# One time for the first time 
+#TO initialize git in local setup
+    -> git init 
+
+# To add remote url to the current WD 
+    -> git remote add <name> <url> 
+
+
+# always before push/pull
+# To add the changes for stage 
+    -> git add . 
+        OR
+    -> git add <filename>
+
+#To commit the changes 
+    -> git commit -m "Message"
+
+# To pull the code 
+    -> git pull <remote_name> <branch_name>
+
+#To push the code 
+    -> git push <remote_name> <branch_name>:<remote_branch_name>
+
+#To status 
+    -> git status
+
+#To switch/create a new branch
+    Req: Code should be commited
+
+    -> git checkout <branch or commit_id>
+
+    -> git checkout -b <branch>
+
+# to check current branch and lists
+    -> git branch
+
+...... New Changes on Dev Branch ..........
+# to remove all the changes on current stage 
+    -> git stash
+
+# to view all the commits 
+    -> git log
+
+    - we can treat a commit id as a new branch
+
+master
+    dev 
+        ............
+        git push origin dev:master
+
+CI/CD 
+    -> pipeline 
+        staging     ====> UAT 
+        dev         ====> Dev server
+        master      ====> Production
+
+// MVC pattern
+
+Model => View => Controller
+
+VIEW => Representational Layer
+Controller => Application layer/ Logical layer
+Model => Data layer
+
+
+URL                                                             DB Server
+
+---------------> Route  -------------> Controller   --------------> Model
+view / url              
+                                        from controller
+                        --------------> View  
+
+// BE 
+    - API Development
+
+
+// FE 
+
+
+App 
+                                                            DB Server
+
+web
+    - js,ts, php, py, RoR, java                      
+android                                         SERVER
+    - ts, js, java, kotlin, flutter
+ios 
+    - hybrid, swift, objective c
+
+
+
+Node js 
+    - Server Runtime Env
+
+- Every node based project should initialeze with npm 
+
+
+upgrade.update.patch
+
+1.0.0
+2.0.0
+2.1.0
+2.1.1
+
+LTS 
+
+16 
+    -> 30 month cycle 
+
+to install a package:
+   #  npm install package_name 
+    - it will download the package in node_modules directory
+    - it will download nth level deep dependency listing 
+    - It will update package.json file of your project
+    - It will add a new file package-lock.json file 
+
+    # to install any package only for dev 
+        npm install pacakge --save -dev
+        - it will create devDepenencies in package.json
+
+    # to uninstall a package 
+        npm uninstall pacakge
+
+    # to update all packages 
+        npm update 
+
+
+"^5.1.3"    -> Latest version 
+- 3 month 
+"5.1.3"     -> Fixed version
+"~5.1.3"    -> nearest LTS version
+
+
+SPA 
+    => Single Page Application 
+
+=> single file 
+=> Disseminate the request
+
+url 
+protocol 
+domain 
+path 
+method 
+
+REST method
+    -> Stateless
+SOAP Method 
+
+https://facebook.com/username
+
+get, post 
+
+// Rest Services, http verbs, restful services , methods
+get 
+post 
+put 
+patch 
+delete 
+
+Request - Response cycle complete
+CRUD Operation 
+Create 
+Read
+Update 
+Delete
+
+
+Login Api 
+                            Data
+    url =======> Form ====================> Server =============> App Layer ====================> Success / Failure 
+                            method+url 
+
+            Data + authorization
+    url ===========================>
+            JWT Token
+
+Database 
+    - SQL (Relational DB)
+    - NoSQL (Non Relational)
+
+
+users
+------------------
+id      name    
+------------------
+1       Ram 
+------------------
+2       Shyam 
+------------------
+3       Ram 
+
+
+products
+------------------------------------
+id     name             price
+------------------------------------
+1   iPhone 12           128000
+------------------------------------
+2   iPhone 13           138000 
+
+orders 
+--------------------------------------------------------
+id  user_id      product_id     qty          amount
+--------------------------------------------------------
+1   1           1               1           128000
+--------------------------------------------------------
+2   3           2               2           276000
+
+
+RDMBS 
+    table 
+    Relationship among table 
+    - mysql, ms sql, oracle, postgresql, sqlite e.g
+
+Non-RDBMS
+    - NewMongoDB, Couchdb etc.
+    - json format 
+
+- Cloud hosting 
+
+
+protocol    => NewMongodb 
+url         => host , port => 27017
+auth        => 
+
+=> NewMongodb://localhost:27017
+
+
+=> I need a table, Table is named as collection 
+=> 
+
+
+# to access NewMongo shell
+    -> NewMongo 
+# to list all the dbs 
+    -> show dbs;
+    or 
+    -> show databases;
+# to create a new db or to select any db available 
+    -> use <db_name>
+    where <db_name> is the database you need to select
+# Show the current db 
+    -> db 
+# get list of tables from current Db 
+    -> show tables
+
+CRUD 
+a. Create 
+    shell 
+    -> db.collection_name.insert({})
+    where collection_name is the table name you want to have/exists
+    the parameter type of insert function should be an object data 
+    an acknowledgement will be returned from the function
+    OR 
+    -> db.collection_name.insertMany([{},{},{},{}])
+
+    when a data is inserted in a table, _id field is auto added by NewMongodb,
+    which can be treated as a primary key(unique)
+
+b. Read 
+    shell
+    -> db.collection_name.find(filter, project, options)
+    find function can accept 3 arguments/parameters
+    first param: 
+        -> an object data => Filter
+            {
+                key: value,
+                key_1: value 
+            }
+            the above condition returns an "and" operation 
+            other operations in filter can be handled by the following syntax: 
+            e.g. or operation 
+            {
+                $operation: condition
+            }
+
+            {
+                $or: [
+                    {role: "admin"},
+                    {email: "userthree@gmail.com"}
+                ]
+            }
+
+            
+            {
+                $ne: 
+            }
+            {
+                $gt 
+            }
+    
+    Second Param: 
+        -> an object data => Projection
+            {
+                field:  1 or 0 // 1 for fetch, 0 for disable
+            }
+    
+    Third Param: 
+        -> an Object data => Options 
+            - skip 
+            - limit 
+            - string 
+
+
+
+
+
+
+[
+    {
+        name: "User Three", 
+        email: 'userthree@gmail.com',
+        address:"Lalitpur", 
+        password:"userthree123", 
+        phone: 1233211231, 
+        role: "customer"
+    }, 
+    {
+        name:"Admin user", 
+        email: "adminuser@gmail.com", 
+        address: "Bhaktapur", 
+        password: "adminuser123", 
+        phone: 4321123432, 
+        role: "admin"
+    }
+]
+
+
+[{
+    
+}]
+
+// nest js
+
+
+- app 
+    - model 
+        - NewMongoose 
+    - controller 
+    - middleware
+- config 
+    - constants 
+    - vars 
+- services 
+    - db
+    - smtp 
+    - api 
+- helpers 
+    - functions 
+app.js
+.env
+
+
+Route =====> Controller =========> Model =========> DB Server
+
+ORM 
+    => Object Relational modelling
+ODM 
+    => Object Document Modelling 
+
+Table 
+    - name plural form 
+        e.g. users 
+    - Columns names are the properties of that table 
+        e.g. id, name, email, address, password, role 
+    - Every row of a table represent a  dataset
+        e.g. 
+            1 Username user@email.com Kathmandu 1234 admin
+Model Class 
+    - Singular Form
+        e.g User 
+    - the same column_name of the table is the property of User model
+        e.g. 
+        let obj = new User();
+        obj.id, obj.name, obj.email, obj.address, obj.password, obj.role
+    - the instance of an object, either null or not null, represents a row set
+        
+NewMongoose is the ODM Provider for Nodejs 
+- install NewMongoose 
+- create a connection at the time of load of app 
+- create a model 
+- use that model to operate
+
+
+Register => Users table populate => Password - encrypted text bcrypt
+Login => Users table -> email registered -> password checked -> Token 
+
+Product add => Header -> set token => Server verify => invalid token => error response 
+                                                    => valid token  => success response
+
+
+
+User => Top 
+    - auth 
+        name, email, password, role, image 
+
+user_info 
+    - user_id 
+    - experice => 1 year
+    - dob   => null 
+    - phone 
+    - address 
+
+// 
+npx create-react-app foldername
+- Register Routes 
+    - /home
+        - Menu 
+    - /login
+        - Menu
+    - /register
+        - Menu  
+    - /admin 
+        - Sidebar 
+    - /user 
+        - Menu
+
+
+// input 
+type: 
+    text, number, date, time, datetime-local,
+    email, password, url, radio, checkbox,
+    submit, reset, button, file, hidden 
+
+required 
+step 
+placeholder 
+value 
+defaultValue
+checked 
+readonly 
+disabled
+
+
+
+https://www.getpostman.com/collections/f8ea3919a6b14ae2c3b0

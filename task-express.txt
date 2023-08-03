@@ -1,0 +1,55 @@
+// Task-1: Route Definition
+    // brand 
+    // banner 
+    // category
+    // product 
+    // user 
+    // order => cart Items
+
+c
+// Task-2: Schema Definition
+    e.g. 
+        users 
+            -> what are the parameters or attributes that you are going to store in db
+
+            e.g. 
+            name, email, address, password, role, image, phone, date_of_birth, status
+    - Identify the schema architectur for the feature mentioned above
+
+
+category 
+    category
+
+
+SmartPhones 
+    android 
+    ios 
+
+
+course 
+    - name, 
+    - fee 
+    - .... 
+
+1 MERN 100000
+2 Laravel 50000
+
+user 
+    - name 
+1 abc 
+
+user_course 
+    - user_id
+    - course_id 
+1 1
+1 2
+
+user_course_payment
+    - user_id
+    - user_course_id
+    - payment 
+
+1 1 10000
+1 1 90000
+1 2 25000
+1 2 25000
